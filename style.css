@@ -20,12 +20,10 @@ body {
   color: white;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 16px;
-}
-
-.wrapper {
-  width: 100%;
-  height: 100%;
-  padding: min(5%, 25px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 header {
@@ -75,6 +73,27 @@ header .score__score {
 
 .attribution a {
   color: #cbcdd2;
+}
+
+.rules {
+  width: 130px;
+  height: 40px;
+  border: 4px solid #606e85;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 32px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.rules:hover {
+  border-color: #8995a9;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.token {
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */
