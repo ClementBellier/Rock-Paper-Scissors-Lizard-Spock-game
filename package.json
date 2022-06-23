@@ -1,0 +1,19 @@
+{
+  "name": "rock-paper-scissors-lizard-spock-game",
+  "version": "1.0.0",
+  "description": "RPSLS Game from frontEndmentor.io",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClementBellier/Rock-Paper-Scissors-Lizard-Spock-game.git"
+  },
+  "author": "kimt0t0 & ClémentBellier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClementBellier/Rock-Paper-Scissors-Lizard-Spock-game/issues"
+  },
+  "homepage": "https://github.com/ClementBellier/Rock-Paper-Scissors-Lizard-Spock-game#readme"
+}
