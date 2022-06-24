@@ -5,33 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
   
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
-
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Rock, Paper, Scissors, Lizard, Spock</title>
 </head>
 <body>
-
-
-  
+    <header>
+      <img src="./images/logo-bonus.svg" alt="Rock Paper Scissors Lizard Spock">
+      <div class="score">
+        <p class="score__title">Score</p>
+        <div class="score__score" id="score">12</div>
+      </div>
+    </header>
+    <main>
+      <img src="./images/bg-pentagon.svg" alt="" class="pentagon">
+      <div class="token scissors" id="scissors">
+        <img src="./images/icon-scissors.svg" alt="Scissors">
+      </div>
+      <div class="token paper" id="paper">
+        <img src="./images/icon-paper.svg" alt="Paper">
+      </div>
+      <div class="token rock" id="rock">
+        <img src="./images/icon-rock.svg" alt="Rock">
+      </div>
+      <div class="token lizard" id="lizard">
+        <img src="./images/icon-lizard.svg" alt="Lizard">
+      </div>
+      <div class="token spock" id="spock">
+        <img src="./images/icon-spock.svg" alt="Spock">
+      </div>
+    </main>
+    <div class="rules" id="rules">Rules</div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Kimt0t0</a> & <a href="#">ClementBellier</a>.
   </div>
 </body>
 </html>

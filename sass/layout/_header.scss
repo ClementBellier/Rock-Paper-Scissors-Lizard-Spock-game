@@ -1,0 +1,41 @@
+header{
+    width: min(85%, 700px);
+    margin-inline: auto;
+    padding: 15px 20px;
+    border: 4px solid $header-outline;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+        width: clamp(50px, 25%, 100px);
+    }
+
+    .score{
+        width: clamp(80px, 8vw + 4rem, 150px);
+        aspect-ratio: 30/23;
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &__title{
+            font-size: clamp(0.5rem, 1vw + 0.25rem, 0.75rem);
+            color: $score-text;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        &__score{
+            color: $dark-text;
+            font-size: clamp(1.75rem, 5vw + 0.5rem, 3.125rem);
+            font-weight: 700;
+        }
+    }
+}
