@@ -115,6 +115,7 @@ header .score__score {
   width: 130px;
   height: 130px;
   box-shadow: 0px 22px 2px #b7bfd1 inset;
+  transition: all 600ms ease;
 }
 .token .token__img {
   display: flex;
@@ -198,6 +199,11 @@ header .score__score {
   display: grid;
   justify-items: center;
   align-items: center;
+}
+.token:hover {
+  transform: scale(1.1);
+  rotate: -0.05turn;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
