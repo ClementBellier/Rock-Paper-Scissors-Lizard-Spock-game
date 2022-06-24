@@ -92,8 +92,112 @@ header .score__score {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
+.pentagon {
+  background: url("../../images/bg-pentagon.svg") center no-repeat;
+  color: #141539;
+}
+
+.token__list {
+  box-sizing: border-box;
+  min-width: 400px;
+  max-width: 600px;
+  min-height: 400px;
+  max-height: 600px;
+  position: relative;
+}
+
 .token {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  list-style-type: none;
+  width: 130px;
+  height: 130px;
+  box-shadow: 0px 22px 2px #b7bfd1 inset;
+}
+.token .token__img {
+  display: flex;
+}
+.token.scissors {
   position: absolute;
+  top: 4%;
+  left: 35%;
+  border-radius: 100%;
+}
+.token.scissors .token__border {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  border: 1em solid #eca922;
+  box-shadow: 0px 5px 0px #be6613;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.token.paper {
+  position: absolute;
+  top: 28%;
+  right: 5%;
+  border-radius: 100%;
+}
+.token.paper .token__border {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  border: 1em solid #5671f5;
+  box-shadow: 0px 5px 0px #2846bd;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.token.rock {
+  position: absolute;
+  bottom: -3%;
+  right: 10%;
+  border-radius: 100%;
+}
+.token.rock .token__border {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  border: 1em solid #dd405d;
+  box-shadow: 0px 5px 0px #9c1631;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.token.lizard {
+  position: absolute;
+  bottom: -3%;
+  left: 10%;
+  border-radius: 100%;
+}
+.token.lizard .token__border {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  border: 1em solid #8c5de5;
+  box-shadow: 0px 5px 0px #6035ac;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.token.spock {
+  position: absolute;
+  top: 28%;
+  left: 5%;
+  border-radius: 100%;
+}
+.token.spock .token__border {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  border: 1em solid #40b9ce;
+  box-shadow: 0px 5px 0px #2f8dac;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

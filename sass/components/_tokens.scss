@@ -1,3 +1,58 @@
+.token__list {
+    box-sizing: border-box;
+    min-width: 400px;
+    max-width: 600px;
+    min-height: 400px;
+    max-height: 600px;
+
+    position: relative;
+}
+
 .token{
-    position: absolute;
+    @include token;
+    &.scissors {
+        position: absolute;
+        top: 4%;
+        left: 35%;
+        border-radius: 100%;
+        .token__border {
+            @include token-border($scissors-light, $scissors-dark);
+        }
+    }
+    &.paper {
+        position: absolute;
+        top: 28%;
+        right: 5%;
+        border-radius: 100%;
+        .token__border {
+            @include token-border($paper-light, $paper-dark);
+        }
+    }
+    &.rock {
+        position: absolute;
+        bottom: -3%;
+        right: 10%;
+        border-radius: 100%;
+        .token__border {
+            @include token-border($rock-light, $rock-dark);
+        }
+    }
+    &.lizard {
+        position: absolute;
+        bottom: -3%;
+        left: 10%;
+        border-radius: 100%;
+        .token__border {
+            @include token-border($lizard-light, $lizard-dark);
+        }
+    }
+    &.spock {
+        position: absolute;
+        top: 28%;
+        left: 5%;
+        border-radius: 100%;
+        .token__border {
+            @include token-border($spock-light, $spock-dark);
+        }
+    }
 }
