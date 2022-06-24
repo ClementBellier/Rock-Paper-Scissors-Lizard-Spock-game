@@ -26,6 +26,10 @@ body {
   align-items: center;
 }
 
+main {
+  height: 75vh;
+}
+
 header {
   width: min(85%, 700px);
   margin-inline: auto;
@@ -75,7 +79,7 @@ header .score__score {
   color: #cbcdd2;
 }
 
-.rules {
+.rules__button {
   width: 130px;
   height: 40px;
   border: 4px solid #606e85;
@@ -85,11 +89,18 @@ header .score__score {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  transition: all 500ms ease;
   cursor: pointer;
 }
-.rules:hover {
+.rules__button:hover {
   border-color: #8995a9;
   background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.1);
+}
+
+footer {
+  position: absolute;
+  bottom: 5%;
 }
 
 .pentagon {
@@ -204,6 +215,37 @@ header .score__score {
   transform: scale(1.1);
   rotate: -0.05turn;
   cursor: pointer;
+}
+
+.modal {
+  border-radius: 10px;
+  display: block;
+  box-sizing: border-box;
+  width: 380px;
+  height: 450px;
+  padding: 1.5em;
+  z-index: 100;
+  background-color: #fff;
+  border: none;
+  position: absolute;
+  top: 15%;
+}
+.modal .rules__title {
+  text-transform: uppercase;
+  font-size: 32px;
+  color: #3b4363;
+  display: inline-flex;
+  padding-right: 210px;
+}
+.modal .rules__exit {
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+  transition: all 700ms ease-out;
+}
+.modal .rules__exit:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */

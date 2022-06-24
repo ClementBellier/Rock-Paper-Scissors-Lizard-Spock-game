@@ -1,0 +1,1 @@
+{"version":3,"sources":["_footer.scss"],"names":[],"mappings":"AAAA,OACE,SAAU,SACV,OAAQ","file":"_footer.min.css","sourcesContent":["footer {\r\n    position: absolute;\r\n    bottom: 5%;\r\n}"]}

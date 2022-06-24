@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["_footer.scss"],"sourcesContent":["footer {\r\n    position: absolute;\r\n    bottom: 5%;\r\n}"],"file":"_footer.css"}

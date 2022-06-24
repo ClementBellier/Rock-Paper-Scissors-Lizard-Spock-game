@@ -1,3 +1,7 @@
+@mixin angles {
+    border-radius: 10px;
+}
+
 @mixin token {
     display: grid;
     justify-items: center;
