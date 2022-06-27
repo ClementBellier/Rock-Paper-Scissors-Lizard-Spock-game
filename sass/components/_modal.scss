@@ -1,11 +1,12 @@
 .modal {
+    display: none;
+
     @include angles;
-    display: block;
     box-sizing: border-box;
     width: 380px;
     height: 450px;
     padding: 1.5em;
-    z-index: 100;
+    z-index: 1;
     background-color: #fff;
     border: none;
     position: absolute;

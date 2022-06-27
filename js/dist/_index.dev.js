@@ -42,22 +42,31 @@ async function createTokens (tokens) {
 
 
 (function _callee() {
-  var newTokens;
   return regeneratorRuntime.async(function _callee$(_context2) {
     while (1) {
       switch (_context2.prev = _context2.next) {
         case 0:
-          _context2.next = 2;
-          return regeneratorRuntime.awrap(createTokens(tokens));
-
-        case 2:
-          newTokens = _context2.sent;
-
-        case 3:
         case "end":
           return _context2.stop();
       }
     }
   });
 })();
+/* MODAL RÈGLES */
+
+
+var modal = document.getElementById("modal-rules");
+var rulesBtn = document.getElementById("rules-button");
+var rulesExit = document.getElementById("rules-exit");
+/* Ouverture */
+
+rulesBtn.addEventListener("click", function (e) {
+  console.log("clic sur le bouton");
+  modal.style.display = "block";
+});
+/* Fermeture */
+
+rulesExit.onclick = function () {
+  modal.style.display = "none";
+};
 //# sourceMappingURL=_index.dev.js.map

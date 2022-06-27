@@ -20,7 +20,7 @@
     </header>
     <main>
       <!-- ¤¤¤ Bloc-01: Contenu jeu ¤¤¤ -->
-      <section class="pentagon">
+      <section class="pentagon section">
         <ol class = "token__list" id="token__list">
           <li class="token scissors" id="scissors">
             <div class="token__border">
@@ -51,19 +51,21 @@
       </section>
       <!-- ¤¤¤ END Bloc-01 ¤¤¤ -->
       <!-- ¤¤¤ Bloc-02: Règles du jeu ¤¤¤ -->
-      <section class="modal rules">
+      <section class="modal rules section" id="modal-rules">
         <h2 class="rules__title">Rules</h2>
-          <button type="button" class="rules__exit">
+          <button type="button" class="rules__exit" id="rules-exit">
             <img src="./images/icon-close.svg" alt="Fermer les règles du jeu" />
           </button>
         </span>
         <img src="./images/image-rules-bonus.svg" alt="Game rules.\n" />
       </section>
+      <section class="rules section">
+        <button type="button" class="rules button" id="rules-button">Rules</button>
+      </section>
       <!-- ¤¤¤ END Bloc-02 ¤¤¤ -->
     </main>
 
-    <footer>
-      <div class="rules__button" id="rules__button">Rules</div>
+    <footer class="footer">
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="#">Kimt0t0</a> & <a href="#">ClementBellier</a>.

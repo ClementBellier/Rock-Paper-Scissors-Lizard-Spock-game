@@ -35,5 +35,23 @@ async function createTokens (tokens) {
 /* *** ACTIONS *** */
 
 (async function() {
-    var newTokens = await createTokens(tokens);
+    //var newTokens = await createTokens(tokens);
 }) ()
+
+    
+/* MODAL RÈGLES */
+var modal = document.getElementById("modal-rules");
+var rulesBtn = document.getElementById("rules-button");
+var rulesExit = document.getElementById("rules-exit");
+
+/* Ouverture */
+rulesBtn.addEventListener("click", function(e) {
+    console.log("clic sur le bouton");
+    modal.style.display = "block";
+}) 
+
+
+/* Fermeture */
+rulesExit.onclick = function() {
+    modal.style.display = "none";
+}
