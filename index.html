@@ -21,36 +21,57 @@
     <main>
       <!-- ¤¤¤ Bloc-01: Contenu jeu ¤¤¤ -->
       <section class="pentagon section">
-        <ol class = "token__list" id="token__list">
-          <li class="token scissors" id="scissors">
-            <div class="token__border">
-              <img src="./images/icon-scissors.svg" class="token__img" alt="Scissors">
-            </div>
-          </li>
-          <li class="token paper" id="paper">
-            <div class="token__border">
-              <img src="./images/icon-paper.svg" class="token__img" alt="Paper">
-            </div>
-          </li>
-          <li class="token rock" id="rock">
-            <div class="token__border">
-              <img src="./images/icon-rock.svg" class="token__img" alt="Rock">
-            </div>
-          </li>
-          <li class="token lizard" id="lizard">
-            <div class="token__border">
-              <img src="./images/icon-lizard.svg" class="token__img" alt="Lizard">
-            </div>
-          </li>
-          <li class="token spock" id="spock">
-            <div class="token__border">
-              <img src="./images/icon-spock.svg" class="token__img" alt="Spock">
-            </div>
-          </li>
-        </ol>
+        <form class = "token__form" id="token__form">
+
+          <input type="radio" class="token scissors input" id="token-scissors-input" name="user-move" value="scissors">
+            <li class="token scissors" id="scissors">
+              <div class="token__border">
+                <img src="./images/icon-scissors.svg" class="token__img" alt="Scissors">
+              </div>
+            </li>
+          </input>
+          
+          <input type="radio" class="token paper input" id="token-paper-input" name="user-move" value="paper">
+            <li class="token paper" id="paper">
+              <div class="token__border">
+                <img src="./images/icon-paper.svg" class="token__img" alt="Paper">
+              </div>
+            </li>
+          </input>
+          
+          <input type="radio" class="token rock input" id="token-rock-input" name="user-move" value="rock">
+            <li class="token rock" id="rock">
+              <div class="token__border">
+                <img src="./images/icon-rock.svg" class="token__img" alt="Rock">
+              </div>
+            </li>
+          </input>
+          
+          <input type="radio" class="token lizard input" id="token-lizard-input" name="user-move" value="lizard">
+            <li class="token lizard" id="lizard">
+              <div class="token__border">
+                <img src="./images/icon-lizard.svg" class="token__img" alt="Lizard">
+              </div>
+            </li>
+          </input>
+          
+          <input type="radio" class="token spock input" id="token-spock-input" name="user-move" value="spock">
+            <li class="token spock" id="spock">
+              <div class="token__border">
+                <img src="./images/icon-spock.svg" class="token__img" alt="Spock">
+              </div>
+            </li>
+          </input>
+          
+        </form>
       </section>
       <!-- ¤¤¤ END Bloc-01 ¤¤¤ -->
       <!-- ¤¤¤ Bloc-02: Règles du jeu ¤¤¤ -->
+            <!-- Ouverture règles: -->
+      <section class="rules section">
+        <button type="button" class="rules button" id="rules-button">Rules</button>
+      </section>
+            <!-- Modale: -->
       <section class="modal rules section" id="modal-rules">
         <h2 class="rules__title">Rules</h2>
           <button type="button" class="rules__exit" id="rules-exit">
@@ -59,16 +80,13 @@
         </span>
         <img src="./images/image-rules-bonus.svg" alt="Game rules.\n" />
       </section>
-      <section class="rules section">
-        <button type="button" class="rules button" id="rules-button">Rules</button>
-      </section>
       <!-- ¤¤¤ END Bloc-02 ¤¤¤ -->
     </main>
 
     <footer class="footer">
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Kimt0t0</a> & <a href="#">ClementBellier</a>.
+        Coded by <a href="https://www.linkedin.com/in/kim-robert-4291a4242/">KimRobert</a> & <a href="#">ClementBellier</a>.
       </div>
   </footer>
 </body>

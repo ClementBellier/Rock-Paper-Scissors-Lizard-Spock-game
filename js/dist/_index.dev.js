@@ -21,7 +21,7 @@ function capitalize(str) {
 /*Ne fonctionne pas:
 
 async function createTokens (tokens) {
-    var tokenLst = document.getElementById("token__list");
+    var tokenLst = document.getElementById("token__form");
     for (token of tokens) {
         let tokenCapitalized = await capitalize(token);
         let tokenElt = document.createElement("li");
@@ -55,18 +55,19 @@ async function createTokens (tokens) {
 /* MODAL RÈGLES */
 
 
-var modal = document.getElementById("modal-rules");
 var rulesBtn = document.getElementById("rules-button");
 var rulesExit = document.getElementById("rules-exit");
+var modal = document.getElementById("modal-rules");
 /* Ouverture */
 
 rulesBtn.addEventListener("click", function (e) {
-  console.log("clic sur le bouton");
+  console.log("Ouverture des règles.");
   modal.style.display = "block";
 });
 /* Fermeture */
 
-rulesExit.onclick = function () {
+rulesExit.addEventListener("click", function (e) {
+  console.log("Sortie des règles.");
   modal.style.display = "none";
-};
+});
 //# sourceMappingURL=_index.dev.js.map

@@ -120,7 +120,7 @@ footer .attribution a {
   color: #141539;
 }
 
-.token__list {
+.token__form {
   box-sizing: border-box;
   min-width: 400px;
   max-width: 600px;
@@ -161,7 +161,7 @@ footer .attribution a {
 }
 .token.paper {
   position: absolute;
-  top: 28%;
+  top: 30%;
   right: 5%;
   border-radius: 100%;
 }
@@ -209,7 +209,7 @@ footer .attribution a {
 }
 .token.spock {
   position: absolute;
-  top: 28%;
+  top: 30%;
   left: 5%;
   border-radius: 100%;
 }

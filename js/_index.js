@@ -7,13 +7,13 @@ const tokens = ["scissors", "paper", "rock", "lizard", "spock"];
 /* *** FONCTIONS *** */
 
 async function capitalize(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1)
+    return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 /*Ne fonctionne pas:
 
 async function createTokens (tokens) {
-    var tokenLst = document.getElementById("token__list");
+    var tokenLst = document.getElementById("token__form");
     for (token of tokens) {
         let tokenCapitalized = await capitalize(token);
         let tokenElt = document.createElement("li");
@@ -36,22 +36,27 @@ async function createTokens (tokens) {
 
 (async function() {
     //var newTokens = await createTokens(tokens);
+
+    
 }) ()
 
     
 /* MODAL RÈGLES */
-var modal = document.getElementById("modal-rules");
 var rulesBtn = document.getElementById("rules-button");
 var rulesExit = document.getElementById("rules-exit");
+var modal = document.getElementById("modal-rules");
+
 
 /* Ouverture */
-rulesBtn.addEventListener("click", function(e) {
-    console.log("clic sur le bouton");
-    modal.style.display = "block";
-}) 
+    rulesBtn.addEventListener("click", function(e) {
+        console.log("Ouverture des règles.");
+        modal.style.display = "block";
+    }) ;
 
 
 /* Fermeture */
-rulesExit.onclick = function() {
-    modal.style.display = "none";
-}
+    rulesExit.addEventListener("click", function(e) {
+        console.log("Sortie des règles.");
+        modal.style.display = "none";
+    });
+
