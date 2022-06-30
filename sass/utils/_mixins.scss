@@ -1,0 +1,28 @@
+@mixin angles {
+    border-radius: 10px;
+}
+
+@mixin token {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    list-style-type: none;
+    width: 130px;
+    height: 130px;
+    box-shadow: 0px 22px 2px $token-shadow inset;
+    .token__img {
+        display: flex;
+    }
+}
+
+@mixin token-border($color, $shadow) {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    border: 1em solid $color;
+    box-shadow: 0px 5px 0px $shadow;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}

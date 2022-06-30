@@ -1,8 +1,11 @@
 @import './base/reset-normalize';
 @import './base/font';
 @import './utils/colors';
+@import './utils/mixins';
 @import './layout/body';
 @import './layout/header';
-@import './layout/attribution';
-@import './layout/rules';
+@import './components/rules';
+@import './layout/footer';
+@import './components/pentagon';
 @import './components/tokens';
+@import './components/modal';
