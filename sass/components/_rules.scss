@@ -1,0 +1,28 @@
+.rules {
+    .section {
+        position: relative;
+    }
+    .button{
+        position: absolute;
+        bottom: 2em;
+        right: 2em;
+        width: 130px;
+        height: 40px;
+        border: 2px solid $header-outline;
+        @include angles;background-color: transparent;
+        color: white;
+        text-align: center;
+        line-height: (40px - 4 * 2); //height - border-width
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: all 500ms ease;
+        cursor: pointer;
+        
+        &:hover {
+            border-color: lighten($header-outline,15);
+            background-color: rgba(255,255,255,.15);
+            transform: scale(1.1);
+        }
+    }
+}
