@@ -49,14 +49,19 @@ var modal = document.getElementById("modal-rules");
 
 /* Ouverture */
     rulesBtn.addEventListener("click", function(e) {
-        console.log("Ouverture des règles.");
-        modal.style.display = "block";
+        //console.log("Ouverture des règles.");
+        modal.style.display = "flex";
     }) ;
 
 
 /* Fermeture */
     rulesExit.addEventListener("click", function(e) {
-        console.log("Sortie des règles.");
+        //console.log("Sortie des règles.");
         modal.style.display = "none";
+    });
+    window.addEventListener("click", function(e) {
+        if(e.target == document.querySelector('body')){
+            modal.style.display = "none";
+        }
     });
 

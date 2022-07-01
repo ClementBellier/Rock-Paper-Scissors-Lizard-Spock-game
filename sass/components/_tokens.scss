@@ -1,10 +1,7 @@
 .token__form {
     box-sizing: border-box;
-    min-width: 400px;
-    max-width: 600px;
-    min-height: 400px;
-    max-height: 600px;
-
+    width: min(80vw,400px);
+    aspect-ratio: 1;
     position: relative;
 }
 
@@ -12,53 +9,59 @@
     @include token;
     transition: all 600ms ease;
     &.scissors {
-        position: absolute;
-        top: 4%;
-        left: 35%;
-        border-radius: 100%;
+        top: -5%;
+        left: calc((100% - $token-size)/2);
         .token__border {
             @include token-border($scissors-light, $scissors-dark);
         }
     }
     &.paper {
-        position: absolute;
-        top: 30%;
-        right: 5%;
-        border-radius: 100%;
+        top: 25%;
+        left: calc(105% - $token-size);
         .token__border {
             @include token-border($paper-light, $paper-dark);
         }
     }
     &.rock {
-        position: absolute;
-        bottom: -3%;
-        right: 10%;
-        border-radius: 100%;
+        top: calc(105% - $token-size);
+        left: calc(90% - $token-size);
         .token__border {
             @include token-border($rock-light, $rock-dark);
         }
     }
     &.lizard {
-        position: absolute;
-        bottom: -3%;
+        top: calc(105% - $token-size);
         left: 10%;
-        border-radius: 100%;
         .token__border {
             @include token-border($lizard-light, $lizard-dark);
         }
     }
     &.spock {
-        position: absolute;
-        top: 30%;
-        left: 5%;
-        border-radius: 100%;
+        top: 25%;
+        left: -5%;
         .token__border {
             @include token-border($spock-light, $spock-dark);
         }
     }
     &:hover {
-        transform: scale(1.1);
-        rotate: -0.05turn;
+        transform: scale(1.1) rotate(0.05turn);
         cursor: pointer;
     }
+}
+input{display: none}
+
+#token-scissors-input:checked {
+    @include tokensWhenChecked(".scissors")
+}
+#token-rock-input:checked {    
+    @include tokensWhenChecked(".rock")
+}
+#token-paper-input:checked {
+    @include tokensWhenChecked(".paper")
+}
+#token-lizard-input:checked {
+    @include tokensWhenChecked(".lizard")
+}
+#token-spock-input:checked {
+    @include tokensWhenChecked(".spock")
 }

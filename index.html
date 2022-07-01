@@ -19,49 +19,40 @@
     </header>
     <main>
       <!-- ¤¤¤ Bloc-01: Contenu jeu ¤¤¤ -->
-      <section class="pentagon section">
+      <section class="section">
         <form class = "token__form" id="token__form">
 
-          <input type="radio" class="token scissors input" id="token-scissors-input" name="user-move" value="scissors">
-            <li class="token scissors" id="scissors">
+          <input type="radio" id="token-scissors-input" name="user-move" value="scissors" />
+          <input type="radio" id="token-paper-input" name="user-move" value="paper" />
+          <input type="radio" id="token-rock-input" name="user-move" value="rock" />
+          <input type="radio" id="token-lizard-input" name="user-move" value="lizard" />
+          <input type="radio" id="token-spock-input" name="user-move" value="spock" />
+          <div class="pentagon"></div>
+          <label for="token-scissors-input" class="token scissors" id="scissors">
               <div class="token__border">
                 <img src="./images/icon-scissors.svg" class="token__img" alt="Scissors">
               </div>
-            </li>
-          </input>
-          
-          <input type="radio" class="token paper input" id="token-paper-input" name="user-move" value="paper">
-            <li class="token paper" id="paper">
+            </label>
+          <label for="token-paper-input" class="token paper" id="paper">
               <div class="token__border">
                 <img src="./images/icon-paper.svg" class="token__img" alt="Paper">
               </div>
-            </li>
-          </input>
-          
-          <input type="radio" class="token rock input" id="token-rock-input" name="user-move" value="rock">
-            <li class="token rock" id="rock">
+            </label>
+          <label for="token-rock-input" class="token rock" id="rock">
               <div class="token__border">
                 <img src="./images/icon-rock.svg" class="token__img" alt="Rock">
               </div>
-            </li>
-          </input>
-          
-          <input type="radio" class="token lizard input" id="token-lizard-input" name="user-move" value="lizard">
-            <li class="token lizard" id="lizard">
+          </label>  
+          <label for="token-lizard-input" class="token lizard" id="lizard">
               <div class="token__border">
                 <img src="./images/icon-lizard.svg" class="token__img" alt="Lizard">
               </div>
-            </li>
-          </input>
-          
-          <input type="radio" class="token spock input" id="token-spock-input" name="user-move" value="spock">
-            <li class="token spock" id="spock">
+            </label>
+          <label for="token-spock-input" class="token spock" id="spock">
               <div class="token__border">
                 <img src="./images/icon-spock.svg" class="token__img" alt="Spock">
               </div>
-            </li>
-          </input>
-          
+            </label>
         </form>
       </section>
       <!-- ¤¤¤ END Bloc-01 ¤¤¤ -->
@@ -73,11 +64,10 @@
             <!-- Modale: -->
       <section class="modal rules section" id="modal-rules">
         <h2 class="rules__title">Rules</h2>
-          <button type="button" class="rules__exit" id="rules-exit">
-            <img src="./images/icon-close.svg" alt="Fermer les règles du jeu" />
-          </button>
-        </span>
-        <img src="./images/image-rules-bonus.svg" alt="Game rules.\n" />
+        <img src="./images/image-rules-bonus.svg" alt="Game rules.\n" class="rules__image"/>
+        <button type="button" class="rules__exit" id="rules-exit">
+          <img src="./images/icon-close.svg" alt="Fermer les règles du jeu" />
+        </button>
       </section>
       <!-- ¤¤¤ END Bloc-02 ¤¤¤ -->
     </main>

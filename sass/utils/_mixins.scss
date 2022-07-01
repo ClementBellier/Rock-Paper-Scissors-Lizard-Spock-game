@@ -3,26 +3,39 @@
 }
 
 @mixin token {
+    position: absolute;
     display: grid;
     justify-items: center;
     align-items: center;
     background-color: white;
     list-style-type: none;
-    width: 130px;
-    height: 130px;
-    box-shadow: 0px 22px 2px $token-shadow inset;
+    width: $token-size;
+    height: $token-size;
+    border-radius: 50%;
+    box-shadow: 0px min(25vw * 0.18, 140px * 0.18) 2px $token-shadow inset;
     .token__img {
-        display: flex;
+        width: 50%;
     }
 }
 
 @mixin token-border($color, $shadow) {
     border-radius: 50%;
-    width: 130px;
-    height: 130px;
-    border: 1em solid $color;
+    width: $token-size;
+    height: $token-size;
+    border: min(25vw * 0.13, 140px * 0.13) solid $color;
     box-shadow: 0px 5px 0px $shadow;
     display: grid;
     justify-items: center;
     align-items: center;
+}
+
+@mixin tokensWhenChecked($token){
+    &~ #{$token}{
+        top: 0;
+        left: 5%;
+        transform: scale(1.5);
+    }
+    &~ .token:not(#{$token}), &~ .pentagon{
+        display: none;
+    }
 }

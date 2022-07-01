@@ -1,31 +1,53 @@
 .modal {
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
     @include angles;
-    box-sizing: border-box;
-    width: 380px;
-    height: 450px;
-    padding: 1.5em;
+    width: 400px;
+    height: 460px;
+    padding: 30px;
     z-index: 1;
     background-color: #fff;
+    box-shadow: 0 0 0 100vw rgba(0,0,0,.4);
     border: none;
     position: absolute;
     top: 15%;
     .rules__title {
+        width: 100%;
         text-transform: uppercase;
         font-size: 32px;
         color: $dark-text;
-        display: inline-flex;
-        padding-right: 210px;
+        text-align: left;
+        line-height: 32px;
     }
     .rules__exit {
-        display: inline-flex;
+        position: absolute;
+        top: 36px;
+        right: 30px;
         border: none;
         background-color: transparent;
-        transition: all 700ms ease-out;
+        transition: all 300ms ease-out;
         &:hover {
             cursor: pointer;
             transform: scale(1.2);
+        }
+    }
+    @media(max-width: 780px){
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        border-radius: 0;
+        justify-content: space-around;
+        .rules__title{
+            text-align: center;
+        }
+        .rules__exit{
+            position: initial;
+        }
+        .rules__image{
+            width: 80vmin;
         }
     }
 }
