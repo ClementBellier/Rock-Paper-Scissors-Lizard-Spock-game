@@ -7,7 +7,7 @@
 
 .token{
     @include token;
-    transition: all 600ms ease;
+    transition: all 1s ease;
     &.scissors {
         top: -5%;
         left: calc((100% - $token-size)/2);

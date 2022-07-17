@@ -19,7 +19,7 @@
     </header>
     <main>
       <!-- ¤¤¤ Bloc-01: Contenu jeu ¤¤¤ -->
-      <section class="section">
+      <section class="game">
         <form class = "token__form" id="token__form">
 
           <input type="radio" id="token-scissors-input" name="user-move" value="scissors" />
@@ -29,40 +29,45 @@
           <input type="radio" id="token-spock-input" name="user-move" value="spock" />
           <div class="pentagon"></div>
           <label for="token-scissors-input" class="token scissors" id="scissors">
-              <div class="token__border">
-                <img src="./images/icon-scissors.svg" class="token__img" alt="Scissors">
-              </div>
-            </label>
+            <div class="token__border">
+              <img src="./images/icon-scissors.svg" class="token__img" alt="Scissors">
+            </div>
+          </label>
           <label for="token-paper-input" class="token paper" id="paper">
-              <div class="token__border">
-                <img src="./images/icon-paper.svg" class="token__img" alt="Paper">
-              </div>
-            </label>
+            <div class="token__border">
+              <img src="./images/icon-paper.svg" class="token__img" alt="Paper">
+            </div>
+          </label>
           <label for="token-rock-input" class="token rock" id="rock">
-              <div class="token__border">
-                <img src="./images/icon-rock.svg" class="token__img" alt="Rock">
-              </div>
+            <div class="token__border">
+              <img src="./images/icon-rock.svg" class="token__img" alt="Rock">
+            </div>
           </label>  
           <label for="token-lizard-input" class="token lizard" id="lizard">
-              <div class="token__border">
-                <img src="./images/icon-lizard.svg" class="token__img" alt="Lizard">
-              </div>
-            </label>
+            <div class="token__border">
+              <img src="./images/icon-lizard.svg" class="token__img" alt="Lizard">
+            </div>
+          </label>
           <label for="token-spock-input" class="token spock" id="spock">
-              <div class="token__border">
-                <img src="./images/icon-spock.svg" class="token__img" alt="Spock">
-              </div>
-            </label>
+            <div class="token__border">
+              <img src="./images/icon-spock.svg" class="token__img" alt="Spock">
+            </div>
+          </label>
+          <p class="pick-text">You picked</p>
+          <div id="the-house"></div>
+          <p class="pick-text house">The house picked</p>
+          <h1 class="game-result">you win</h1>
+          <button class="play-again">Play again</button>
         </form>
       </section>
       <!-- ¤¤¤ END Bloc-01 ¤¤¤ -->
       <!-- ¤¤¤ Bloc-02: Règles du jeu ¤¤¤ -->
             <!-- Ouverture règles: -->
-      <section class="rules section">
+      <section class="rules">
         <button type="button" class="rules button" id="rules-button">Rules</button>
       </section>
             <!-- Modale: -->
-      <section class="modal rules section" id="modal-rules">
+      <section class="modal rules" id="modal-rules">
         <h2 class="rules__title">Rules</h2>
         <img src="./images/image-rules-bonus.svg" alt="Game rules.\n" class="rules__image"/>
         <button type="button" class="rules__exit" id="rules-exit">

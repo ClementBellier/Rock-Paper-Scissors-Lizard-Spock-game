@@ -3,10 +3,11 @@
 @import './utils/variables';
 @import './utils/colors';
 @import './utils/mixins';
-@import './layout/body';
-@import './layout/header';
-@import './components/rules';
-@import './layout/footer';
 @import './components/pentagon';
 @import './components/tokens';
 @import './components/modal';
+@import './components/rules';
+@import './layout/body';
+@import './layout/game';
+@import './layout/header';
+@import './layout/footer';

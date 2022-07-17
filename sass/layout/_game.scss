@@ -1,0 +1,53 @@
+.pick-text{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: clamp(0.75rem, 1vw + 0.5rem, 1.125rem);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    inline-size: max-content;
+}
+
+.house{
+    left: auto;
+    right: -5%;
+}
+
+#the-house{
+    display: none;
+    position: absolute;
+    width: $token-size;
+    height: $token-size;
+    border-radius: 50%;
+    background-color: $background-dark;
+    right: 0;
+    transform: scale(1.5);
+}
+.game-result{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.play-again{
+    display: none;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all .5s ease-in-out;
+    &:hover{
+        transform: translateX(-50%) scale(1.1);
+    }
+}

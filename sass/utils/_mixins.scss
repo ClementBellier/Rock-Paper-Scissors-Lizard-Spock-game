@@ -32,10 +32,13 @@
 @mixin tokensWhenChecked($token){
     &~ #{$token}{
         top: 0;
-        left: 5%;
+        left: 0;
         transform: scale(1.5);
     }
     &~ .token:not(#{$token}), &~ .pentagon{
         display: none;
+    }
+    &~ .pick-text, &~ #the-house {
+        display: block;
     }
 }
